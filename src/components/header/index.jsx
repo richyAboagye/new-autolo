@@ -20,13 +20,13 @@ const Header = (props) => {
             <HeaderTopbar htClass={props.htClass}/>
             <div className={`hx-header-style-1 ${props.hClass}`} id="sticky-header">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center content">
                         <div className="col-lg-3 col-md-7 col-sm-8 col-7 col-t">
                             <div className="logo">
                                 <Link onClick={ClickHandler} to="/home"><img src={Logo} alt=""/></Link>
                             </div>
                         </div>
-                        <div className="col-lg-8 d-none d-lg-block col-m">
+                        <div className="big_bar col-lg-8 d-none d-lg-block col-m">
                             <div className="main-menu">
                                 <nav className="nav_mobile_menu">
                                     <ul>
@@ -69,21 +69,22 @@ const Header = (props) => {
                                             </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                                        <li className='number'><Link>+1 214-200-5151</Link></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div className="col-lg-1 col-md-2 col-sm-2 col-2 search col-t">
+                        <div className="col-lg-1 col-md-1 col-sm-2 col-2 search col-t">
                             <ul>
                                 <li><Link onClick={ClickHandler} to="/"><i className="fa fa-search"></i></Link>
-                                    <ul>
+                                    {/* <ul>
                                         <li>
                                             <form action="search" onSubmit={SubmitHandler}>
                                                 <input type="text" placeholder="search here.."/>
                                                 <button><i className="fa fa-search"></i></button>
                                             </form>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                             </ul>
                         </div>
