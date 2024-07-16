@@ -48,7 +48,7 @@
 }
 
 .hx-header-style-1 .main-menu {
-    text-align: right;
+    text-align: center;
 }
 
 .header-top ul.header-social,
@@ -156,16 +156,34 @@
     position: relative;
 }
 
+/* .big_bar {
+    background-color: red;
+    padding-left: 0 !important;
+}
+.main-menu {
+    background-color: green;
+}
+
+.nav_mobile_menu ul {
+    background-color: rgb(3, 3, 3);
+} */
+
 .main-menu nav ul li a:last-child {
     padding-right: 0;
 }
 
 .main-menu nav ul li {
     padding: 13px 18px;
+    color: white;
+    /* background-color: red; */
 }
 
 .main-menu nav ul li:first-child {
     padding-left: 0;
+}
+
+.main-menu nav ul li:last-child a {
+    font-weight: 700;
 }
 
 .main-menu nav ul li>ul li:first-child {
@@ -324,18 +342,38 @@
 }
 
 .search {
-    text-align: right;
+    text-align: center;
+    /* background-color: blue; */
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .hx-header-style-1 .search,
 .hx-header-style-2 .search {
-    text-align: right;
-    padding-right: 0;
+    text-align: center;
+    padding-right: 0 !important;
+}
+
+.search ul {
+    /* background-color: black; */
+    padding: 0 !important;
+    /* margin-top: 15px; */
+   
+}
+
+.search ul li {
+    list-style: none;
+    /* background-color: green; */
+    
 }
 
 .search ul li a {
     text-align: right;
     color: #333;
+    /* background-color: brown; */
 }
 
 .search ul li a i {
@@ -344,7 +382,7 @@
     color: #fff;
 }
 
-.search ul li>ul {
+/* .search ul li>ul {
     position: absolute;
     right: 0;
     top: 180%;
@@ -357,7 +395,7 @@
     transition: all .3s;
     text-align: center;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-}
+} */
 
 .search ul li:hover>ul {
     visibility: visible;
@@ -365,18 +403,28 @@
     top: 146%;
 }
 
-@media(max-width:991px){
+
+@media(max-width:1080px){
     .search ul li:hover>ul{
         top: 180%;
     }
+
 }
 
-@media(max-width:767px){
+@media(max-width:1200px){
 
     .search ul li a i{
         position: relative;
-        top: 10px;
+        top: 7px;
     }
+    
+}
+@media(max-width:1405px){
+
+    .main-menu nav ul li:last-child{
+        display: none;
+    }
+    
 }
 .hx-header-style-1 .search ul li>ul,
 .hx-header-style-2 .search ul li>ul {
@@ -433,3 +481,8 @@
 .hx-header-top-1.style-2{
     display: none;
 }
+
+/* .number {
+    color: white;
+    cursor: pointer;
+} */
